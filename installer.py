@@ -7,7 +7,7 @@ print("User Current Version:-", sys.version)
 print(Fore.RESET)
 
 
-name = 'SpeechRecognition'
+name = 'pyautogui'
 print("--==--")
 try:
     subprocess.check_call([sys.executable, "-m", "pip", "show", name])
