@@ -21,7 +21,7 @@ def serialcomm():
             if check != line:
                 check = line
                 print(line)
-                if "1 pressed" in str(line):
+                if "1  pressed" in str(line):
                     pyautogui.hotkey("ctrlleft", "a")
             time.sleep(.1)
     except Exception as e:
