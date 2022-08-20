@@ -22,7 +22,40 @@ def serialcomm():
                 check = line
                 print(line)
                 if "1  pressed" in str(line):
-                    pyautogui.hotkey("ctrlleft", "a")
+                    pyautogui.hotkey("!")
+                if "2  pressed" in str(line):
+                    pyautogui.hotkey("g")
+                if "3  pressed" in str(line):
+                    pyautogui.hotkey("#")
+                if "4  pressed" in str(line):
+                    pyautogui.hotkey(" ")
+                if "5  pressed" in str(line):
+                    pyautogui.hotkey("@")
+                if "6  pressed" in str(line):
+                    pyautogui.hotkey("?")
+                if "7  pressed" in str(line):
+                    pyautogui.hotkey("delete", "$")
+                if "8  pressed" in str(line):
+                    pyautogui.hotkey("delete", "£")
+                if "9  pressed" in str(line):
+                    pyautogui.hotkey("delete", "{")
+                if "10  pressed" in str(line):
+                    pyautogui.hotkey("delete", "}")
+                    ###
+                if "33  toggled on" in str(line):
+                    pyautogui.hotkey("delete", ",")
+                if "33  toggled off" in str(line):
+                    pyautogui.hotkey("delete", ";")
+                if "34  toggled on" in str(line):
+                    pyautogui.hotkey("ctrlleft", "#")
+                if "34  toggled off" in str(line):
+                    pyautogui.hotkey("ctrlleft", "$")
+                if "35  toggled on" in str(line):
+                    pyautogui.hotkey("b")
+                if "36  toggled on" in str(line):
+                    pyautogui.hotkey("u")
+                if "36  toggled off" in str(line):
+                    pyautogui.hotkey("u")
             time.sleep(.1)
     except Exception as e:
         if "ClearCommError failed" in str(e) or "could not open port" in str(e):
