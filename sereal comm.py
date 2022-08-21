@@ -43,15 +43,17 @@ def serialcomm():
                     pyautogui.hotkey("delete", "}")
                     ###
                 if "33  toggled on" in str(line):
-                    pyautogui.hotkey("delete", ",")
+                    pyautogui.hotkey("ctrlleft", ",")
                 if "33  toggled off" in str(line):
-                    pyautogui.hotkey("delete", ";")
+                    pyautogui.hotkey("ctrlleft", ",")
                 if "34  toggled on" in str(line):
                     pyautogui.hotkey("ctrlleft", "#")
                 if "34  toggled off" in str(line):
-                    pyautogui.hotkey("ctrlleft", "$")
+                    pyautogui.hotkey("ctrlleft", "#")
                 if "35  toggled on" in str(line):
-                    pyautogui.hotkey("b")
+                    pyautogui.hotkey("ctrlleft", "b")
+                if "35  toggled on" in str(line):
+                    pyautogui.hotkey("ctrlleft", "b")
                 if "36  toggled on" in str(line):
                     pyautogui.hotkey("u")
                 if "36  toggled off" in str(line):
