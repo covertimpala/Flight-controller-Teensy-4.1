@@ -58,6 +58,14 @@ def serialcomm():
                     pyautogui.hotkey("u")
                 if "36  toggled off" in str(line):
                     pyautogui.hotkey("u")
+                if "37  toggled on" in str(line):
+                    pyautogui.hotkey("ctrlleft", "v")
+                if "37  toggled off" in str(line):
+                    pyautogui.hotkey("ctrlleft", "v")
+                if "38  toggled on" in str(line):
+                    pyautogui.hotkey("ctrlleft", "y")
+                if "38  toggled off" in str(line):
+                    pyautogui.hotkey("ctrlleft", "y")
             time.sleep(.1)
     except Exception as e:
         if "ClearCommError failed" in str(e) or "could not open port" in str(e):
