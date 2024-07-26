@@ -1,6 +1,8 @@
 import serial
+from serial import Serial
+#import pySerial as serial
 import time
-from plyer import notification
+#from plyer import notification
 import pyautogui
 global err
 err = 0
@@ -8,7 +10,7 @@ def serialcomm():
     global err
     global ser
     try:
-        ser=serial.Serial("COM3",9600)  #change ACM number as found from ls /dev/tty/ACM*
+        ser=serial.Serial("COM9",9600)  #change ACM number as found from ls /dev/tty/ACM*
         global line
         def sensors():
             global line
